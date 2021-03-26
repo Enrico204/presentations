@@ -1,0 +1,137 @@
+\documentclass[10pt]{beamer}
+%\usepackage[utf8]{inputenc}
+\usetheme{default}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\definecolor{backcolor}{HTML}{004586}
+\definecolor{forecolor}{HTML}{FFFFFF}
+\definecolor{ftcolor}{HTML}{FFF2CC}
+\definecolor{sapienza}{HTML}{830029}
+
+\newcommand{\printauthor}{Enrico Bassetti}
+
+% ToC:
+% - Parte 1: terremoti (slide Panizzi)
+% - Parte 2: SeismoCloud
+
+\setbeamertemplate{headline}
+{
+}
+
+\setbeamertemplate{frametitle}
+{
+	\vskip-3pt
+	\leavevmode
+	\hbox{
+		\begin{beamercolorbox}[wd=\paperwidth,ht=4ex,dp=1ex]{frametitle}
+			$\vcenter{\hbox{\includegraphics[keepaspectratio=true,height=40pt]{llg}}}$
+			\raggedright\hspace*{2em}\large\insertframetitle
+		\end{beamercolorbox}
+	}
+}
+\setbeamertemplate{footline}
+{
+	\hbox{
+		\begin{beamercolorbox}[wd=\paperwidth,ht=3.8ex,dp=3ex]{footline}
+			\centering
+			LD2016 @ Latina Linux Group
+			\hspace{5em}
+			\today
+			\hspace{5em}
+			Progetto SeismoCloud
+			\hspace{5em}
+			\printauthor
+		\end{beamercolorbox}
+	}
+}
+
+
+\setbeamercolor{normal text}{fg=forecolor}
+\setbeamercolor{frametitle}{fg=ftcolor}
+\setbeamercolor{footline}{fg=forecolor}
+\setbeamercolor{background canvas}{bg=backcolor}
+\setbeamercolor{item}{fg=white}
+
+\beamertemplatenavigationsymbolsempty
+
+\begin{document}
+
+	\begin{frame}
+		\frametitle{\hfill}
+		
+		\LARGE SeismoCloud		
+		
+	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%% PARTE 1
+	
+	\begin{frame}
+		\frametitle{Parte 1}
+		\LARGE Informazioni di base sui terremoti
+	\end{frame}
+	
+	\input{why-earthquakes}
+	
+	\input{terminologia-terremoti}
+	
+	\input{scale-di-misura}
+	
+	\input{velocita-frequenza}
+	
+	\input{rete-ingv}
+	
+	\begin{frame}
+		\frametitle{Parentesi: Latina}
+		\LARGE Latina è a rischio sismico?
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Latina è a rischio sismico?}
+		
+		\Large Negli anni 2011 e 2012, a Tor Tre Ponti, ci sono stati terremoti di Magnitudo dell'ordine di 3.5-3.8.
+		
+		\Large \pause Ci dobbiamo preoccupare?
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Latina è a rischio sismico?}
+		
+		\LARGE NO
+		
+		\large Latina (e le zone limitrofe) non sono zone sismiche a causa della composizione (post-palude) sebbene sia presente uno strato di sedimenti che \textbf{amplifica} qualsiasi vibrazione, \textbf{anche non sismiche}
+		
+	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%% PARTE 2
+	
+	\begin{frame}
+		\frametitle{Parte 2}
+		\LARGE Il progetto SeismoCloud
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{SeismoCloud}
+		Un sistema di EEW (Earthquake Early Warning) basato su IoT in \textit{crowdsourcing}
+		
+		Progetto del Dipartimento di Informatica della Facoltà di Ingegneria dell'Informazione, Informatica e Statistica (Università La Sapienza di Roma) e dell'Istituto Nazionale di Geofisica e Vulcanologia
+		
+		\centering
+		\includegraphics[keepaspectratio=true,height=40pt]{dipartimentologo}
+		\includegraphics[keepaspectratio=true,height=40pt]{dipartimento}
+			\hspace{1em}
+		\includegraphics[keepaspectratio=true,height=40pt]{ingv}
+	\end{frame}
+	
+	\input{sc-obiettivo}
+	
+	\input{sc-come-funziona}
+
+	\begin{frame}
+		\frametitle{\hfill}
+		
+		\LARGE Domande?		
+		
+	\end{frame}
+	
+\end{document}
