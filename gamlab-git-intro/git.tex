@@ -1,0 +1,100 @@
+
+\section{Git}
+
+\begin{frame}{Git introduction}
+
+\textit{Git} (2005, Linus Torvalds) is a very powerful VC system.
+
+\vspace{2em}
+
+In this presentation we'll skip description and internal working model, and we'll
+focus only on usage.
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Initialize a git repository}
+
+If we don't have a repository, we need to create it:
+
+\vspace{2em}
+
+\Large \texttt{git init}
+
+\vspace{2em}
+
+\normalsize
+\begin{itemize}
+  \item Git will create a new (local) repository
+  \item A special directory, named \texttt{.git}, is created on the root of the
+  project
+  \item No file will be added to the repository
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Clone an existing repository}
+
+If a repository exists on a remote endpoint, we can clone it:
+
+\vspace{2em}
+
+\Large \texttt{git clone} \textit{<url>} \textit{[<localdir>]}
+
+\vspace{2em}
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Adding a file into a repository}
+
+\vspace{2em}
+
+\Large \texttt{git add} \textit{<file>}
+
+\vspace{2em}
+
+\normalsize
+Adding a file into a repository means that Git will track the changes on file
+contents, attributes and other metadatas.
+
+You need to add a file into the repository both the first time (to inform Git that
+you want to track that file) and before every commit where you want to ``save"
+the file change (to inform Git that you want to store the change in this commit).
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Create a commit in Git history}
+
+\vspace{2em}
+
+\Large \texttt{git commit}
+
+\vspace{2em}
+
+Note: if you don't specify the commit message with \texttt{-m} parameter,
+Git will open the default editor to write one.
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Common operations}
+
+Create a new branch \\
+\texttt{git branch} \textit{<branchname>}
+
+Create a new branch and switch to it \\
+\texttt{git checkout -b} \textit{<branchname>}
+
+Merge the branch \textit{bob} into current branch \\
+\texttt{git merge} \textit{bob}
+
+Send commits to (default) remote endpoint \\
+\texttt{git push}
+
+Retrieve commits from (default) remote endpoint \\
+\texttt{git pull}
+
+\end{frame}
