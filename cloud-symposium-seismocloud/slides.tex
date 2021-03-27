@@ -1,0 +1,61 @@
+\documentclass[10pt]{beamer}
+\usepackage[italian]{babel}
+%\usepackage[utf8]{inputenc}
+
+\usetheme{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{listings}
+\lstset{breaklines=true}
+
+\usepackage[outputdir=out]{minted}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\newcommand{\circa}{$\sim$ }
+
+\title{Moving to the Cloud}
+\subtitle{The SeismoCloud case}
+\date{}
+\author{Enrico Bassetti}
+\institute{Cloud Computing course \\ Sapienza, University of Rome}
+%\titlegraphic{\hfill\includegraphics[height=1.5cm]{.png}}
+
+\begin{document}
+
+\setbeamertemplate{frame footer}{Moving to the Cloud: the SeismoCloud case - Cloud Computing @ Sapienza, University of Rome}
+
+\maketitle
+
+\begin{frame}{Roadmap}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\include{introduction}
+
+\include{current-architecture}
+
+\include{solutions}
+
+\include{moving-to-cloud}
+
+
+\begin{frame}[standout]
+  \Huge Questions?
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}\ccbysa\end{center}
+
+  \small This presentation is available on GitHub as LaTeX source and compiled PDF: \\
+  \url{https://github.com/Enrico204/cloud-symposium-seismocloud}
+\end{frame}
+
+\end{document}
