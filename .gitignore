@@ -38,4 +38,6 @@ _minted-slides/
 *.swp
 *.pdfpc
 
+*/out/*
 !*/out/slides.pdf
+*/reveal.js/
